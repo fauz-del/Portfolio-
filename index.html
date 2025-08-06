@@ -1,0 +1,416 @@
+<meta name='viewport' content='width=device-width, initial-scale=1'/><!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Fauz – Frontend Developer</title>
+  <link rel="stylesheet" href="style.css" />
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <h1 class="logo animate">Fauz</h1>
+      <div class="menu-toggle">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <ul class="nav-links animate">
+        <li><a href="#about">About</a></li>
+        <li><a href="#skill">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="about" id= "about">
+    <h2 class="about-title animate">Hi, I'm Fauz</h2>
+    <p class="about-desc animate">A frontend developer building beautiful & responsive websites.</p>
+  </section>
+  
+<section class="skills" id="skills">
+        <h2 class="section-title animate">SKILLS</h2>
+        <div class="skills-container">
+            <div class="skill-node">
+                <span>HTML5</span>
+            </div>
+            <div class="skill-node">
+                <span>CSS3</span>
+            </div>
+            <div class="skill-node">
+                <span>JavaScript</span>
+            </div>
+           </div>
+    </section>
+
+  <section class="projects" id="projects">
+    <h2 class="section-title animate">My Projects</h2>
+    <div class="project-list">
+      <div class="project-card">
+        <h3>Budget App</h3>
+        <p>A clean app to manage your daily expenses.</p>
+        <a href="https://fauz-del.github.io/budget/" target="_blank">View Project</a>
+      </div>
+      <div class="project-card animate">
+        <h3>YouTube Clone</h3>
+        <p>A minimal YouTube interface clone using HTML, CSS, and JS.</p>
+        <a href="https://fauz-del.github.io/YouTubeclone/" target="_blank">View Project</a>
+      </div>
+      <div class="project-card animate">
+        <h3>Login Page</h3>
+        <p>A visually clean and modern login interface with form validation elements.</p>
+        <a href="https://fauz-del.github.io/Login-page/#" target="_blank">View Project</a>
+      </div>
+      <div class="project-card animate">
+        <h3>Url Shortener</h3>
+        <p>A web tool that shortens long URLs using form input and displays the result dynamically.</p>
+        <a href="https://fauz-del.github.io/Url-shortener-/" target="_blank">View Project</a>
+      </div>
+      <div class="project-card animate">
+        <h3>Signup Page</h3>
+        <p>A responsive user signup form featuring modern UI design and accessible form elements.</p>
+        <a href="https://fauz-del.github.io/Signup-page/" target="_blank">View Project</a>
+      </div>
+      <div class="project-card animate">
+        <h3>Weather App</h3>
+        <p>Displays current weather data using the OpenWeatherMap API, with dynamic icons and responsive layout.</p>
+        <a href="https://fauz-del.github.io/Weather-app/" target="_blank">View Project</a>
+      </div>
+      <div class="project-card animate">
+        <h3>Weather-App (Alternative)</h3>
+        <p>Responsive app showing weather by country and state.</p>
+        <a href="https://fauz-del.github.io/Weatherapp/" target="_blank">View Project</a>
+      </div>
+    </div>
+  </section>
+
+<section id="contact" class="fade-in">
+        <h2 class="section-title">CONTACT</h2>
+        <form class="contact-form glass-card">
+            <div class="form-group">
+                <input type="text" placeholder="Your Name" required>
+            </div>
+            <div class="form-group">
+                <input type="email" placeholder="Your Email" required>
+            </div>
+            <div class="form-group">
+                <textarea rows="5" placeholder="Your Message" required></textarea>
+            </div>
+            <button type="submit" class="neural-btn">SEND MESSAGE</button>
+        </form>
+          <footer class="footer">
+    <p>&copy; 2025 Fauz. All rights reserved.</p>
+  </footer>
+    </section>
+
+</body>
+</html><style>:root {
+  --primary: #011a41;
+  --accent: #e0e0e0;
+  --white: #fff;
+  --black: #000;
+  --shadow: rgba(0, 0, 0, 0.15);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background: #f9f9f9;
+  color: var(--primary);
+  line-height: 1.6;
+}
+
+header {
+  background: var(--white);
+  box-shadow: 0 4px 6px var(--shadow);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+}
+
+.logo {
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+
+.nav-links {
+  display: flex;
+  gap: 2rem;
+}
+
+.nav-links li {
+  list-style: none;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: var(--primary);
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.nav-links a:hover {
+  color: #0a58ca;
+}
+
+/* Toggle menu for small screens */
+.menu-toggle {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  cursor: pointer;
+}
+
+.menu-toggle span {
+  width: 25px;
+  height: 3px;
+  background: var(--primary);
+  transition: 0.4s;
+}
+
+/* About section */
+.about {
+  text-align: center;
+  padding: 4rem 2rem;
+  background: var(--white);
+  box-shadow: 0 6px 10px var(--shadow);
+}
+
+.about-title {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.about-desc {
+  font-size: 1.2rem;
+  color: #333;
+}
+
+   /* Skills */
+        .skills-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+            padding: 2rem 4rem;
+            background: var(--white);
+           box-shadow: 0 6px 10px var(--shadow);
+        }
+
+        .skill-node {
+            font-family: 'Audiowide', sans-serif;
+            width: 100px;
+            height: 100px;
+            background: var(--bg-glass);
+            border: 2px solid var(--primary);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            transition: all 0.3s ease;
+            cursor: pointer;
+            font-weight: 400;
+            font-size: 0.8rem;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+        }
+
+        .skill-node::before {
+            content: '';
+            position: absolute;
+            width: 90%;
+            height: 90%;
+            border-radius: 50%;
+            background: radial-gradient(circle, var(--primary), transparent);
+            opacity: 0;
+            transition: all 0.3s ease;
+            transform: scale(1.2);
+        }
+
+        .skill-node:hover {
+            transform: scale(1.1);
+            box-shadow: 0 0 30px var(--primary);
+        }
+
+        .skill-node:hover::before {
+            opacity: 0.3;
+        }
+
+/* Projects section */
+.projects {
+  padding: 3rem 2rem;
+}
+
+.section-title {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
+.project-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+}
+
+.project-card {
+  background: var(--white);
+  padding: 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0 6px 15px var(--shadow);
+  transition: transform 0.3s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+}
+
+.project-card h3 {
+  margin-bottom: 0.5rem;
+  color: var(--primary);
+}
+
+.project-card p {
+  font-size: 0.95rem;
+  margin-bottom: 1rem;
+  color: #444;
+}
+
+.project-card a {
+  text-decoration: none;
+  color: #0a58ca;
+  font-weight: 500;
+}
+
+/* Footer */
+.footer {
+  text-align: center;
+  padding: 2rem;
+  background: var(--primary);
+  color: var(--white);
+  margin-top: 4rem;
+}
+
+/* Animations */
+.animate {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 0.7s ease;
+}
+
+.animate.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .menu-toggle {
+    display: flex;
+  }
+
+  .nav-links {
+    position: absolute;
+    top: 70px;
+    right: 0;
+    background: var(--white);
+    flex-direction: column;
+    width: 200px;
+    padding: 1rem;
+    display: none;
+    box-shadow: 0 4px 10px var(--shadow);
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+
+  .menu-toggle.open span:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 6px);
+  }
+
+  .menu-toggle.open span:nth-child(2) {
+    opacity: 0;
+  }
+
+  .menu-toggle.open span:nth-child(3) {
+    transform: rotate(-45deg) translate(5px, -6px);
+  }
+}
+
+        .contact-form {
+            max-width: 350px;
+           margin: auto auto;
+            border: 1px solid #222;
+           border-radius: 20px;
+          
+        }
+
+        .form-group {
+          margin-bottom: 20px;
+          margin-left: 18px;
+          margin-top: 20px;
+                    }
+
+        .form-group input,
+        .form-group textarea {
+            width: 95%;
+            padding: 15px;
+            background: var(--bg-glass);
+            border: 1px solid #222;
+            border-radius: 20px;
+            color: var(--text-primary);
+            font-size: 16px;
+            transition: all 0.3s ease;
+        }
+
+        
+        .neural-btn {
+            font-family: 'Audiowide', sans-serif;
+            background: #000;
+            color: #fff;
+            padding: 10px 30px;
+            border: none;
+            border-radius: 20px;
+            margin-left: 95px;
+            margin-bottom: 20px;
+          }
+          
+          .neural-btn:hover{
+            background: #e0e0e0;
+            color: #fff;
+          }
+       </style><script>// Toggle Navbar
+const menuToggle = document.querySelector('.menu-toggle');
+const navMenu = document.querySelector('.nav-links');
+
+menuToggle.addEventListener('click', () => {
+  navMenu.classList.toggle('active');
+  menuToggle.classList.toggle('open');
+});
+
+// Entrance Animation
+window.addEventListener('DOMContentLoaded', () => {
+  const animatedElements = document.querySelectorAll('.animate');
+
+  animatedElements.forEach((el, index) => {
+    setTimeout(() => {
+      el.classList.add('show');
+    }, index * 200);
+  });
+});</script>
